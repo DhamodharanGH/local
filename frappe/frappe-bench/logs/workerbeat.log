@@ -1,0 +1,9 @@
+celery beat v3.1.19 (Cipater) is starting.
+__    -    ... __   -        _
+Configuration ->
+    . broker -> redis://localhost:6379//
+    . loader -> celery.loaders.app.AppLoader
+    . scheduler -> celery.beat.PersistentScheduler
+    . db -> beat.schedule
+    . logfile -> [stderr]@%INFO
+    . maxinterval -> now (0s)

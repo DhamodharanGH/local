@@ -1,0 +1,12 @@
+[2015-12-22 10:16:39 +0000] [21710] [INFO] Starting gunicorn 19.4.1
+[2015-12-22 10:16:39 +0000] [21710] [INFO] Listening at: http://127.0.0.1:8000 (21710)
+[2015-12-22 10:16:39 +0000] [21710] [INFO] Using worker: sync
+[2015-12-22 10:16:39 +0000] [21765] [INFO] Booting worker with pid: 21765
+[2015-12-22 10:16:39 +0000] [21766] [INFO] Booting worker with pid: 21766
+[2015-12-22 10:19:29 +0000] [21710] [INFO] Handling signal: term
+[2015-12-22 10:19:29 +0000] [21710] [INFO] Shutting down: Master
+[2016-03-21 22:12:54 +0000] [1477] [INFO] Starting gunicorn 19.4.1
+[2016-03-21 22:12:54 +0000] [1477] [INFO] Listening at: http://127.0.0.1:8000 (1477)
+[2016-03-21 22:12:54 +0000] [1477] [INFO] Using worker: sync
+[2016-03-21 22:12:54 +0000] [1564] [INFO] Booting worker with pid: 1564
+[2016-03-21 22:12:54 +0000] [1565] [INFO] Booting worker with pid: 1565

@@ -1,0 +1,15 @@
+ 
+ -------------- celery@erpnext v3.1.19 (Cipater)
+---- **** ----- 
+--- * ***  * -- Linux-3.13.0-68-generic-i686-with-Ubuntu-14.04-trusty
+-- * - **** --- 
+- ** ---------- [config]
+- ** ---------- .> app:         frappe:0xb683308c
+- ** ---------- .> transport:   redis://localhost:6379//
+- ** ---------- .> results:     redis://localhost
+- *** --- * --- .> concurrency: 1 (prefork)
+-- ******* ---- 
+--- ***** ----- [queues]
+ -------------- .> celery           exchange=celery(direct) key=celery
+                
+

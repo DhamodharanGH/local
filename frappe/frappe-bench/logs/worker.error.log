@@ -1,0 +1,38 @@
+[2015-12-22 10:16:49,145: WARNING/MainProcess] celery@erpnext ready.
+[2015-12-22 10:19:28,321: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 278, in start
+    blueprint.start(self)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/celery/bootsteps.py", line 123, in start
+    step.start(parent)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/celery/worker/consumer.py", line 821, in start
+    c.loop(*c.loop_args())
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/celery/worker/loops.py", line 76, in asynloop
+    next(loop)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/kombu/async/hub.py", line 340, in create_loop
+    cb(*cbargs)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 984, in on_readable
+    item = self.cycle.on_readable(fileno)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 331, in on_readable
+    return chan.handlers[type]()
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 652, in _brpop_read
+    self.client.connection.disconnect()
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 835, in disconnect
+    channel._on_connection_disconnect(self)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 489, in _on_connection_disconnect
+    self._disconnect_pools()
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 477, in _disconnect_pools
+    self._async_pool.disconnect()
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/redis/connection.py", line 921, in disconnect
+    connection.disconnect()
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 835, in disconnect
+    channel._on_connection_disconnect(self)
+  File "/home/frappe/frappe-bench/env/local/lib/python2.7/site-packages/kombu/transport/redis.py", line 491, in _on_connection_disconnect
+    raise get_redis_ConnectionError()
+ConnectionError
+[2015-12-22 10:19:28,355: ERROR/MainProcess] consumer: Cannot connect to redis://localhost:6379//: .
+Trying again in 2.00 seconds...
+
+
+worker: Warm shutdown (MainProcess)
+[2016-03-21 22:12:58,835: WARNING/MainProcess] celery@erpnext ready.

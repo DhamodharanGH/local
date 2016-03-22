@@ -1,0 +1,31 @@
+{
+  "name": "redis-commands",
+  "version": "1.0.1",
+  "description": "Redis commands",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "node tools/build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NodeRedis/redis-commands.git"
+  },
+  "keywords": [
+    "redis",
+    "commands",
+    "prefix"
+  ],
+  "author": "luin <i@zihua.li> (http://zihua.li)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NodeRedis/redis-commonds/issues"
+  },
+  "homepage": "https://github.com/NodeRedis/redis-commonds",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "ioredis": "^1.0.8",
+    "json-stable-stringify": "^1.0.0",
+    "mocha": "^2.2.1"
+  }
+}
